@@ -4,15 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi primer sitio</title>
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>HOLA MUNDO!!!</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nesciunt
-      ratione accusamus nostrum consequuntur ducimus ullam? Illo autem pariatur
-      quos, ipsum veritatis corporis ut ducimus facilis error, totam molestiae
-      deleniti.
-    </p>
+    <div class="contenedor">
+      <h2>Login</h2>
+      <form id="forma" name="forma">
+        <div class="elemento">
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" name="usuario" required="true" />
+        </div>
+
+        <div class="elemento">
+          <label for="contraseña">Contraseña</label>
+          <input
+            type="password"
+            id="contraseña"
+            name="password"
+            required="true"
+          />
+        </div>
+
+        <div class="recordatorio">
+          <input type="checkbox" value="Recordarme" id="recordar" />
+          <label for="recordar" class="elemento">Recordarme</label>
+          <br />
+          <br />
+          <a href="#" class="recordatorio__link"
+            >Has olvidado tu contraseña 😞</a
+          >
+        </div>
+
+        <div class="elemento">
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
   </body>
 </html>

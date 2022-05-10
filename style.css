@@ -1,0 +1,74 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    #7209b7,
+    #3f37c0
+  ); // hace que vaya desde tal color a otro
+}
+
+a {
+  text-decoration: none;
+}
+
+/*DEFINICION DE LAS CLASES*/
+.contenedor {
+  margin: 50px auto;
+  width: 400px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.contenedor h2 {
+  /*MODIFICA SOLO EL H2 QUE SE ENCUENTRA EN CONTENEDOR*/
+
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 30px;
+  color: #4cc9f0;
+  text-align: center;
+}
+
+.contenedor .elemento label {
+  color: white;
+}
+
+.contenedor .elemento input {
+  /*MODIFICA LOS INPUTS QUE SE ENCUENTRA DENTRO DE ESOS SELECTORES*/
+
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+
+/*zona de los recordar y olvido su contra*/
+.recordatorio {
+  color: #ff0000;
+}
+
+.recordatorio__link {
+  color: #ff0000;
+} /* CSS link color (red) */
+.recordatorio__link:hover {
+  color: #4cc9f0;
+} /* CSS link hover (green) */
+
+/*EN ESTA PARTE SE MODIFICA EL ASPECTO GRAFICO DEL SUBMIT (BOTON ENVIAR)*/
+.contenedor .elemento input[type="submit"] {
+  background-color: #f72585;
+  border: none;
+  letter-spacing: 4px; /*ES EL ESPACIADO QUE HAY ENTRE LAS LETRAS */
+  text-transform: uppercase; /*CONVERTIR TODO EN MAYUSCULA*/
+  cursor: pointer; /*EL CURSOR CAMBIA AL PASAR EL RATON*/
+  padding: 15px;
+  margin-top: 30px;
+}
